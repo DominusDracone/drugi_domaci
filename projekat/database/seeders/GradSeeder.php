@@ -15,6 +15,6 @@ class GradSeeder extends Seeder
      */
     public function run()
     {
-        Grad::factory(5)->create();
+        
     }
 }
