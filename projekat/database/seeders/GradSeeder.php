@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Grad;
 
 class GradSeeder extends Seeder
 {
@@ -14,6 +15,6 @@ class GradSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Grad::factory(5)->create();
     }
 }

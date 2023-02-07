@@ -17,18 +17,20 @@ class HotelSeeder extends Seeder
     {
         Hotel::create([
             'ime'=>"Hilton",
-            'brZvezdica'=>"5"
-            
+            'brZvezdica'=>"5",
+            'gradId'=>"1"
         ]);
 
         Hotel::create([
             'ime'=>"Hajat",
-            'brZvezdica'=>"5"
+            'brZvezdica'=>"5",
+            'gradId'=>"1"
         ]);
 
         Hotel::create([
             'ime'=>"Ćira",
-            'brZvezdica'=>"3"
+            'brZvezdica'=>"3",
+            'gradId'=>"2"
         ]);
     }
 }
