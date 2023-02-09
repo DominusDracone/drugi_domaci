@@ -20,7 +20,7 @@ class GradFactory extends Factory
        
         return [
             'ime' => $this ->faker->city(),
-            'populacija' => $this->faker->numberBetween(1000, 500000),
+            'brStanovnika' => $this->faker->numberBetween(1000, 500000),
             'drzava' => $this ->faker->country(),
         ];
     }
