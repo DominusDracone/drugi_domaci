@@ -46,13 +46,13 @@ class HotelController extends Controller
      * @param  \App\Models\Hotel  $hotel
      * @return \Illuminate\Http\Response
      */
-    public function show(Hotel $hotel_id)
+    public function show($hotel_id)
     {
         $hotel = Hotel::find($hotel_id);
         if(is_null($hotel)){
-            return response() -> jsone('Data not found.', 404);
+            return response() -> json('Data not found.', 404);
         }
-        return response() -> jsone($hotel);
+        return response() -> json($hotel);
     }
 
     /**

@@ -46,13 +46,13 @@ class GradController extends Controller
      * @param  \App\Models\Grad  $grad
      * @return \Illuminate\Http\Response
      */
-    public function show(Grad $grad_id)
+    public function show($grad_id)
     {
         $grad = Grad::find($grad_id);
         if(is_null($grad)){
-            return response() -> jsone('Data not found.', 404);
+            return response() -> json('Data not found.', 404);
         }
-        return response() -> jsone($grad);
+        return response() -> json($grad);
     }
 
     /**
@@ -84,7 +84,7 @@ class GradController extends Controller
      * @param  \App\Models\Grad  $grad
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Grad $grad_id)
+    public function destroy(int $grad_id)
     {
         Grad::delete($grad_id);
     }

@@ -46,13 +46,13 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user_id)
+    public function show($user_id)
     {
         $user = User::find($user_id);
         if(is_null($user)){
-            return response() -> jsone('Data not found.', 404);
+            return response()->json('Data not found.', 404);
         }
-        return response() -> jsone($user);
+        return response()->json($user);
     }
 
     /**

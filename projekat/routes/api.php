@@ -26,7 +26,7 @@ Route::get('/user', [UserController::class, 'index']);
 
 Route::get('/grad/{id}', [GradController::class, 'show']);
 Route::get('/grad', [GradController::class, 'index']);
-Route::delete('/grad{id}', [GradController::class, 'destroy']);
+Route::delete('/grad/{id}', [GradController::class, 'destroy']);
 
 Route::get('/hotel/{id}', [HotelController::class, 'show']);
 Route::get('/hotel', [HotelController::class, 'index']);
