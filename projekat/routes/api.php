@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GradController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HotelController;
+use App\Http\Controllers\API\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,5 @@ Route::delete('/grad/{id}', [GradController::class, 'destroy']);
 
 Route::get('/hotel/{id}', [HotelController::class, 'show']);
 Route::get('/hotel', [HotelController::class, 'index']);
+
+Route::post('/register', [AuthController::class, 'register']);
