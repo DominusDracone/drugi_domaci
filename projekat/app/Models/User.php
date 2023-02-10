@@ -20,7 +20,8 @@ class User extends Authenticatable
     protected $fillable = [
         'ime',
         'email',
-        'šifra',
+        'password',
+        'hotelId',
     ];
 
     /**
